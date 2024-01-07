@@ -18,10 +18,11 @@ section{
     height: 69rem;
     width: 80%;
     position: absolute;
+    background-color: #fafafa;
 }
 
 nav{
-    background-color: white;
+    background-color: #fafafa;
     display: flex;
     justify-content: space-between;
     height: 6rem;
@@ -49,25 +50,28 @@ h1,h2,h3,h4,ul,ol,p{
     background-size: 100%;
     padding: 10%;
     height: 40rem ;
-    z-index: 2;
+    z-index: 5;
+    opacity: 1;
 }
 .create{
-   background-color: white;
+   background-color: #fafafa;
 }
 div{
     padding: 0;
     margin: 0;
 }
-
+.error {
+    background-color: #ffcccc;
+}
 .red{
-    background-color: brown;
-    color: white;
+    background-color: #dd5347;
+    color: #fafafa;
 }
 .white{
-    color: white;
+    color: #fafafa;
 }
 .blue{
-    color: white;
+    color: #fafafa;
     background-color: rgb(30, 107, 207);
     width: 22rem;
 }
@@ -77,8 +81,15 @@ button{
     margin: 0;
     padding: 0;
     border: none;
-    background-color: white;
+    background-color: #fafafa;
+    filter:none;
+    transition: filter 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+button:hover{
+    filter: brightness(0.8);
+  
+}
+
 
 .logo{
  display: flex;
@@ -96,7 +107,7 @@ h3{
     font-size: 1.5rem;
 }
 .arrow{
-    background-color: brown;
+    background-color: #dd5347;
     width: 6rem;
     border-radius: 100%;
 
@@ -107,7 +118,7 @@ h3{
     justify-content: end;
     width: 100%;
     position: absolute;
-    z-index: 5;
+    z-index: 8;
     top: 67rem;
     left: -1rem;
 }
@@ -123,12 +134,18 @@ h3{
 
 .create{
     width: 100%;
-   
+    opacity: 0;
     z-index: 5;
 }
 
 .login{
-    z-index: 1;
+    z-index: 2;
+    opacity: 0;
+}
+.trlogin{
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
 }
 .createaccount{
     border: solid .3rem rgb(200, 200, 200);
@@ -143,19 +160,19 @@ h3{
     margin-top: 18rem;
 }
 .formulaire{
-    width: 20rem;
+   display: block;
     margin-left: 2%;
 }
 label{
     font-size: 1.5rem;
-
+   display: block;
 }
 input{
     border: none;
     box-sizing: border-box;
     height: 4rem;
-    width: 87rem;
-    background-color: whitesmoke;
+    width: 97%;
+    background-color: white;
     margin-bottom: 1rem;
     border-bottom: .7rem solid #D9D9D9;
 }
@@ -168,7 +185,7 @@ input:focus {
     border-bottom: .7rem solid rgb(213, 218, 110);
 }
 .plus{
-    background-color: white;
+    background-color: #fafafa;
     position: relative;
     top: -5.1rem;
     left: 6rem;
@@ -176,7 +193,7 @@ input:focus {
     text-align: center;
 }
 .plus2{
-    background-color: white;
+    background-color: #fafafa;
     position: relative;
     top: -2.1rem;
     left: 6rem;
@@ -200,11 +217,26 @@ input:focus {
 
     .login{
         z-index: 3;
-        background-color: white;
+        background-color: #fafafa;
         width: 100%;
     }
 
    .ted{
     position: relative;
     top: 8rem;
+   }
+
+   .gmail{
+    font-size: 1.5rem;
+    font-weight: 500;
+  
+    position: relative;
+   
+    top: 2.6rem;
+    left: 7rem;
+
+   }
+
+   .error-message{
+    color: #dd5347;
    }

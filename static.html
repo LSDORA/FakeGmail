@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Started PHP</title>
+    <title>Fake Gamil</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <div class="change">
-            <button class="arrow"><img src="./asset/arrow.png" alt="" srcset=""></button>
+            <button onclick="" class="arrow"><img src="./asset/arrow.png" alt="" srcset=""></button>
         </div>
     </header>
 <nav>
-    <div class="logo">
-        <img src="./asset/mail.png" height="40px" width="45px" alt="" srcset="">
+    <div  class="logo">
+        <img onclick="changeSection('acceuil')"  src="./asset/mail.png" height="40px" width="45px" alt="" srcset="">
         <h1 class="logog">Gmail</h1>
     </div>
     <div>
         <button type="button">POUR LES PROS</button>
-        <button type="button">CONNEXION</button>
-        <button type="button" class="red">CREER UN COMPTE</button>
+        <button type="button" onclick="changeSection('login')">CONNEXION</button>
+        <button type="button" onclick="changeSection('create')"  class="red">CREER UN COMPTE</button>
     </div>
 </nav>
 <section class="acceuil">
     <h1 class="white">Retrouvez la fluidité et la <br> simplicité de Gmail sur <br>tous vos appareil</h1>
-    <button type="button" class="mainbutton red">CREER UN COMPTE</button>
+    <button type="button" onclick="changeSection('create')" class="mainbutton red">CREER UN COMPTE</button>
   
 </section>
 <section class="create">
@@ -38,21 +38,61 @@
         <h2 class="plus">Créer un compte</h2>
         <div class="formulaire">
             <label for="name">Nom *</label>
-            <input type="text" placeholder="Votre nom" name="" id="">
+            <input type="text" placeholder="Votre nom" required name="name" id="name">
             <label for="prenom">Prénom *</label>
-            <input type="text" placeholder="Votre prenom" name="" id="">
-            <label for="mail">Mail *</label>
-            <input type="email" name="" id="">
+            <input type="text" placeholder="Votre prénom" required name="prenom" id="prenom">
+            <label for="mail">Mail * <span class="gmail">@gmail.com</span></label>
+            <input type="email" placeholder="Votre adresse Mail" required name="mail" id="mail">
             <label for="password">Choisir votre mot de passe *</label>
-            <input type="password" name="" id="">
+            <input type="password" placeholder="Votre mot de passe" required name="password" id="password">
+            <span id="passwordError" class="error-message"></span>
+            
         </div>
         <div class="buttonform">
-            <button class="blue" style=" text-align: center;" type="button">VALIDER VOTRE COMPTE</button>
+            <button class="blue" type="button" onclick="validerCompte()">VALIDER VOTRE COMPTE</button>
         </div>
     </form>
+    <script>
+        function validerCompte() {
+            var inputs = document.querySelectorAll('.createaccount input[required]');
+            var isValid = true;
+    
+            inputs.forEach(function(input) {
+                if (input.value.trim() === '') {
+                    isValid = false;
+                    input.classList.add('error');
+                } else {
+                    input.classList.remove('error');
+                }
+            });
+    
+            // Validation du mot de passe
+            var passwordInput = document.getElementById('password');
+            var password = passwordInput.value.trim();
+    
+            // Vérification des caractères spéciaux
+      
+            var passwordErrorSpan = document.getElementById('passwordError');
+            
+            if (password.length < 8 ) {
+                isValid = false;
+                passwordInput.classList.add('error');
+                passwordErrorSpan.textContent = "Utilisez 8 caractères ou plus pour votre mot de passe.";
+            } else {
+                passwordInput.classList.remove('error');
+                passwordErrorSpan.textContent = ""; // Efface le message d'erreur s'il n'y a pas d'erreur.
+            }
+    
+            if (isValid) {
+                // Tous les champs sont remplis et le mot de passe respecte les règles de sécurité
+                changeSection('trlogin');
+            }
+        }
+    </script>
+    
 </section>
 <section class="login">
-    <h2 class="ted" style=" text-align: center;">Bienvenue dans votre espace Null</h2>
+    <h2 class="ted" style=" text-align: center;">Bienvenue dans votre espace</h2>
   
 
     <form class="loginaccount" action="" method="post">
@@ -60,16 +100,33 @@
         <div class="formulaire">
      
             <label for="mail">Mail *</label>
-            <input type="email" name="" id="">
+            <input type="email" placeholder="Votre addresse Mail" name="" id="">
             <label for="password">Choisir votre mot de passe *</label>
-            <input type="password" name="" id="">
+            <input type="password" placeholder="Votre mot de passe" name="" id="">
         </div>
         <div class="buttonform">
-            <button class="blue" style=" text-align: center;" type="button">VALIDER VOTRE COMPTE</button>
+            <button class="blue" onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
         </div>
     </form>
 </section>
-<section class=""></section>
-	
-	
+<section class="trlogin">
+    <h2 class="ted" style=" text-align: center;">Bienvenue dans votre espace Aymerick</h2>
+  
+
+    <form class="loginaccount" action="" method="post">
+        <h2 class="plus2">Connectez-vous à votre compte</h2>
+        <div class="formulaire">
+     
+            <label for="mail">Mail *</label>
+            <input type="email" placeholder="Votre addresse Mail" name="" id="">
+            <label for="password">Choisir votre mot de passe *</label>
+            <input type="password" placeholder="Votre mot de passe" name="" id="">
+        </div>
+        <div class="buttonform">
+            <button class="blue" onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
+        </div>
+    </form>
+</section>
+<script src="./js/app.js"></script>
+</body>
 </html>
