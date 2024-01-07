@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@font-face {
+    font-family: 'Open'; /* Le nom que vous voulez donner à la police */
+    src: url('../asset/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype'); /* Chemin vers le fichier TrueType */
+}
+html{
+	font-size: 62.5%;
+    overflow: hidden;
+}
+body,section{
+    padding: 0;
+    margin: 0;
+    width: auto;
+    font-family: 'Open',sans-serif;
+}
+section{
+    height: 69rem;
+    width: 80%;
+    position: absolute;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 9;
+
+}
+
+nav,.arrow{
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.293));
+}
+h1,h2,h3,h4,ul,ol,p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: 300;
+}
+
+
+.acceuil{
+    background-image: url(/asset/home-hero.jpg);
+    background-position: center;
+    background-size: 100%;
+    padding: 10%;
+    height: 40rem ;
+    z-index: 2;
+}
+.create{
+   background-color: white;
+}
+div{
+    padding: 0;
+    margin: 0;
+}
+
+.red{
+    background-color: brown;
+    color: white;
+}
+.white{
+    color: white;
+}
+.blue{
+    color: white;
+    background-color: rgb(30, 107, 207);
+    width: 22rem;
+}
+button{
+    height: 6rem;
+    width: 18rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+}
+
+.logo{
+ display: flex;
+ align-items: center;
+ margin-left: 1rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+.arrow{
+    background-color: brown;
+    width: 6rem;
+    border-radius: 100%;
+
+}
+
+.change{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 67rem;
+    left: -1rem;
+}
+.mainbutton{
+    margin-top: 1.5rem;
+}
+.logog{
+    color: rgb(132, 132, 132);
+    font-weight: 700;
+    margin-left: .5rem;
+    font-size: 1.5rem;
+}
+
+.create{
+    width: 100%;
+   
+    z-index: 5;
+}
+
+.login{
+    z-index: 1;
+}
+.createaccount{
+    border: solid .3rem rgb(200, 200, 200);
+    margin:0% 20% ;
+    height: 45rem;
+    margin-top: 3rem;
+}
+.loginaccount{
+    border: solid .3rem rgb(200, 200, 200);
+    margin:0% 20% ;
+    height: 30rem;
+    margin-top: 18rem;
+}
+.formulaire{
+    width: 20rem;
+    margin-left: 2%;
+}
+label{
+    font-size: 1.5rem;
+
+}
+input{
+    border: none;
+    box-sizing: border-box;
+    height: 4rem;
+    width: 87rem;
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+    border-bottom: .7rem solid #D9D9D9;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    background-color: rgb(249, 255, 127); 
+    box-sizing: border-box;
+    border-bottom: .7rem solid rgb(213, 218, 110);
+}
+.plus{
+    background-color: white;
+    position: relative;
+    top: -5.1rem;
+    left: 6rem;
+    width: 26rem;
+    text-align: center;
+}
+.plus2{
+    background-color: white;
+    position: relative;
+    top: -2.1rem;
+    left: 6rem;
+    width: 50rem;
+    text-align: center;
+}
+.buttonform{
+    margin-top: 1rem;
+    width: auto;
+    text-align: center;
+    }
+
+    .create h2{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    .create h3{
+        
+        margin: 0 30%;
+    }
+
+    .login{
+        z-index: 3;
+        background-color: white;
+        width: 100%;
+    }
+
+   .ted{
+    position: relative;
+    top: 8rem;
+   }
