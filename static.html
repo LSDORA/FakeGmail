@@ -65,13 +65,10 @@
                     input.classList.remove('error');
                 }
             });
-    
-            // Validation du mot de passe
+
             var passwordInput = document.getElementById('password');
             var password = passwordInput.value.trim();
-    
-            // Vérification des caractères spéciaux
-      
+
             var passwordErrorSpan = document.getElementById('passwordError');
             
             if (password.length < 8 ) {
@@ -80,7 +77,7 @@
                 passwordErrorSpan.textContent = "Utilisez 8 caractères ou plus pour votre mot de passe.";
             } else {
                 passwordInput.classList.remove('error');
-                passwordErrorSpan.textContent = ""; // Efface le message d'erreur s'il n'y a pas d'erreur.
+                passwordErrorSpan.textContent = "";
             }
     
             if (isValid) {
