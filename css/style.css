@@ -45,7 +45,7 @@ h1,h2,h3,h4,ul,ol,p{
 
 
 .acceuil{
-    background-image: url(../asset/home-hero.jpg);
+    background-image: url('../asset/home-hero.jpg');
     background-position: center;
     background-size: 100%;
     padding: 10%;
