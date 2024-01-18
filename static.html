@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="change">
-            <button onclick="" class="arrow"><img src="./asset/arrow.png" alt="" srcset=""></button>
+            <a href="#create"> <button onclick="" class="arrow"><img src="./asset/arrow.png" alt="" srcset=""></button> </a>
         </div>
     </header>
 <nav>
@@ -22,7 +22,7 @@
     <div>
         <button type="button">POUR LES PROS</button>
         <button type="button" onclick="changeSection('login')">CONNEXION</button>
-        <button type="button" onclick="changeSection('create')"  class="red">CREER UN COMPTE</button>
+        <a href="#create"><button class="red" onclick="changeSection('create')">CREER UN COMPTE</button></a>
     </div>
 </nav>
 <section class="acceuil">
@@ -30,7 +30,8 @@
     <button type="button" onclick="changeSection('create')" class="mainbutton red">CREER UN COMPTE</button>
   
 </section>
-<section class="create">
+<section class="create" id="create">
+  <div class="down">
     <h2 style=" text-align: center;">Une boîte de réception <br> entièrement repensée</h2>
     <h3 style=" text-align: center;">Avec les nouveaux onglets personnalisables, repérez imméditement les nouveaux messages et choissiez ceux que vous souhaittez lire en priorité</h3>
 
@@ -52,6 +53,7 @@
             <button class="blue" type="button" onclick="validerCompte()">VALIDER VOTRE COMPTE</button>
         </div>
     </form>
+  </div>
     <script>
         function validerCompte() {
             var inputs = document.querySelectorAll('.createaccount input[required]');
@@ -81,55 +83,52 @@
             }
     
             if (isValid) {
-                  
-                var prenom = document.getElementById("prenom").value;
-                var nom = document.getElementById("nom").value;
-                document.getElementById("wM").innerHTML = "Bienvenue dans votre espace " + prenom +" "+ nom;
                 changeSection('trlogin');
             }
         }
     </script>
     
 </section>
-<section class="login">
-    <h2 class="ted" style=" text-align: center;">Bienvenue dans votre espace</h2>
-  
-
-    <form class="loginaccount" action="" method="post">
-        <h2 class="plus2">Connectez-vous à votre compte</h2>
-        <div class="formulaire">
-     
-            <label for="mail">Mail *</label>
-            <input type="email" placeholder="Votre addresse Mail" name="" id="">
-            <label for="password">Choisir votre mot de passe *</label>
-            <input type="password" placeholder="Votre mot de passe" name="" id="">
-        </div>
-        <div class="buttonform">
-            <button class="blue" onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
-        </div>
-    </form>
-</section>
-<section class="trlogin">
-    <h2 class="ted" id="wM" style=" text-align: center;"></h2>
-  
-
-    <form class="loginaccount" action="" method="post">
-        <h2 class="plus2">Connectez-vous à votre compte</h2>
-        <div class="formulaire">
-     
-            <label for="mail">Mail *</label>
-            <input type="email" placeholder="Votre addresse Mail" name="" id="">
-            <label for="password">Choisir votre mot de passe *</label>
-            <input type="password" placeholder="Votre mot de passe" name="" id="">
-        </div>
-        <div class="buttonform">
-            <button class="blue" onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
-        </div>
-    </form>
-</section>
-<section class="main">
-
-</section>
 <script src="./js/app.js"></script>
+</body>
+<body>
+    <section class="login">
+        <h2 class="ted"  style=" text-align: center;">Bienvenue sur votre compte</h2>
+        <h3 class="ted" style=" text-align: center;">Bienvenue sur votre compte</h2>
+    
+        <form class="loginaccount" action="" method="post">
+            <h2 class="plus2">Connectez-vous à votre compte</h2>
+            <div class="formulaire">
+            <div class="greenred">
+                <p>CONNEXION</p>
+            </div>
+                <label for="mail">Mail *</label>
+                <input type="email" placeholder="Votre addresse Mail" name="" id="">
+                <label for="password">Choisir votre mot de passe *</label>
+                <input type="password" placeholder="Votre mot de passe" name="" id="">
+            </div>
+            <div class="buttonform">
+                <button class="blue" onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
+            </div>
+        </form>
+    </section>
+    <section class="trlogin">
+        <h2 class="ted" id="wM" style=" text-align: center;">Bienvenue sur votre compte Ngampolo Aymerick</h2>
+        <h3 class="ted" style=" text-align: center;">Bienvenue sur votre compte Ngampolo Aymerick</h2>
+    
+        <form class="loginaccount" action="" method="post">
+            <h2 class="plus2">Connectez-vous à votre compte</h2>
+            <div class="formulaire">
+                
+                <label for="mail">Mail *</label>
+                <input type="email" placeholder="Votre addresse Mail" name="" id="">
+                <label for="password">Choisir votre mot de passe *</label>
+                <input type="password" placeholder="Votre mot de passe" name="" id="">
+            </div>
+            <div class="buttonform">
+                <button class="blue" onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
