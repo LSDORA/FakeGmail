@@ -17,7 +17,7 @@ if(isset($nom) && isset($prenom)){ # vérification des champs
 
 ?>
 
-</form></h2>
+   <h2 class="ted"  style=" text-align: center;">Bienvenue sur votre compte</h2>
         <h3 class="ted" style=" text-align: center;">Bienvenue sur votre compte</h2>
     
         <form class="loginaccount" action="" method="post">
@@ -35,4 +35,5 @@ if(isset($nom) && isset($prenom)){ # vérification des champs
                 <button class="blue" aria-label="Connexion à votre compte" name="connexion a son compte"   onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
             </div>
         </form>
+        
         
