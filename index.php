@@ -48,17 +48,4 @@ include_once "./include/head.inc.php";
 </section>
 <script src="./js/app.js"></script>
 </body>
-<body>
-    <section class="login">
-            <?php
-           include_once "./include/login.inc.php";
-           ?>       
-    </section>
-    <section class="trlogin">
-            <?php
-           include_once "./include/trlogin.inc.php";
-           ?>       
-    </section>
-</body>
-<script src="./js/app.js"></script>
 </html>

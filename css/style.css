@@ -461,9 +461,7 @@ table.blueTable{
   table.blueTable tfoot td {
     font-size: 14px;
   }
-  table.blueTable tfoot .links {
-   
-  }
+
   table.blueTable tfoot .links a{
     display: inline-block;
     background: #1C6EA4;

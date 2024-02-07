@@ -26,23 +26,24 @@
                     }
                 ?>
             </ul>
-           
+
     <form class="createaccount" action="<?php print htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <h2 class="plus">Créer un compte</h2>
         <div class="formulaire">
-            <label for="name">Nom *</label>
+            <label id="name">Nom *</label>
             <input type="text" placeholder="Votre nom" required name="nom" id="nom">
-            <label for="prenom">Prénom *</label>
+            <label id="prenomlb">Prénom *</label>
             <input type="text" placeholder="Votre prénom" required name="prenom" id="prenom">
-            <label for="mail">Mail * </label>
+            <label id="maillb">Mail * </label>
             <input type="email" placeholder="Votre adresse Mail" required name="mail" id="mail2">
-            <label for="password">Choisir votre mot de passe *</label>
+            <label id="passwordlb">Choisir votre mot de passe *</label>
             <input type="password" placeholder="Votre mot de passe" required name="password" id="password">
             <span id="passwordError" class="error-message"></span>
             
         </div>
         <div class="buttonform">
-        <input class="blue" type="submit" class="btn btn-primary" value="Envoyer">        </div>
+            <button class="blue" name="valider le compte" accesskey="d" aria-label="Valider votre compte"  type="button" >VALIDER VOTRE COMPTE</button>
+        </div>
     </form>
   </div>
        
