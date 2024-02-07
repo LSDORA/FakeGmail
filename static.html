@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake Gamil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+  name="description"
+  content="Mary's simple recipe for maple bacon donuts
+           makes a sticky, sweet treat with just a hint
+           of salt that you'll keep coming back for.">
+    <title>Fake Gmail</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/heigth.css">
 </head>
 <body>
     <header>
         <div class="change">
-            <a href="#create"> <button onclick="" class="arrow"><img src="./asset/arrow.png" alt="" srcset=""></button> </a>
+            <a name="link" accesskey="g" aria-label="Read more about Seminole tax hike" href="#create"> <button aria-label="fleche" onclick="" class="arrow"><img src="./asset/arrow.png" alt="je t'aime" srcset=""></button> </a>
         </div>
     </header>
 <nav>
     <div  class="logo">
-        <img onclick="changeSection('acceuil')"  src="./asset/mail.png" height="40px" width="45px" alt="" srcset="">
+        <img onclick="changeSection('acceuil')"  src="./asset/mail.png" class="height" alt="je t'aime" srcset="">
         <h1 class="logog">Gmail</h1>
     </div>
     <div>
-        <button type="button">POUR LES PROS</button>
-        <button type="button" onclick="changeSection('login')">CONNEXION</button>
-        <a href="#create"><button class="red" onclick="changeSection('create')">CREER UN COMPTE</button></a>
+        <button aria-label="pour les pros" type="button">POUR LES PROS</button>
+        <button aria-label="Connexion depuis la nav bar" type="button" onclick="changeSection('login')">CONNEXION</button>
+        <a name="link" accesskey="h" aria-label="Read more about Seminole tax hike" href="#create"><button name="creer un compte" aria-label="Creer un compte depuis la nav bar"  class="red" onclick="changeSection('create')">CREER UN COMPTE</button></a>
     </div>
 </nav>
 <section class="acceuil">
     <h1 class="white">Retrouvez la fluidité et la <br> simplicité de Gmail sur <br>tous vos appareil</h1>
-    <a href="#create"><button type="button" onclick="changeSection('create')" class="mainbutton red">CREER UN COMPTE</button></a>
+    <a name="link" accesskey="n" aria-label="Read more about Seminole tax hike" href="#create"><button name="creer un compte" aria-label="Creer un compte depuis la main page" type="button" onclick="changeSection('create')" class="mainbutton red">CREER UN COMPTE</button></a>
   
 </section>
 <section class="create" id="create">
@@ -43,51 +49,18 @@
             <label for="prenom">Prénom *</label>
             <input type="text" placeholder="Votre prénom" required name="prenom" id="prenom">
             <label for="mail">Mail * </label>
-            <input type="email" placeholder="Votre adresse Mail" required name="mail" id="mail">
+            <input type="email" placeholder="Votre adresse Mail" required name="mail" id="mail2">
             <label for="password">Choisir votre mot de passe *</label>
             <input type="password" placeholder="Votre mot de passe" required name="password" id="password">
             <span id="passwordError" class="error-message"></span>
             
         </div>
         <div class="buttonform">
-            <button class="blue" type="button" onclick="validerCompte()">VALIDER VOTRE COMPTE</button>
+            <button class="blue" name="valider le compte" accesskey="d" aria-label="Valider votre compte"  type="button" onclick="validerCompte()">VALIDER VOTRE COMPTE</button>
         </div>
     </form>
   </div>
-    <script>
-        function validerCompte() {
-            var inputs = document.querySelectorAll('.createaccount input[required]');
-            var isValid = true;
-    
-            inputs.forEach(function(input) {
-                if (input.value.trim() === '') {
-                    isValid = false;
-                    input.classList.add('error');
-                } else {
-                    input.classList.remove('error');
-                }
-            });
-
-            var passwordInput = document.getElementById('password');
-            var password = passwordInput.value.trim();
-
-            var passwordErrorSpan = document.getElementById('passwordError');
-            
-            if (password.length < 8 ) {
-                isValid = false;
-                passwordInput.classList.add('error');
-                passwordErrorSpan.textContent = "Utilisez 8 caractères ou plus pour votre mot de passe.";
-            } else {
-                passwordInput.classList.remove('error');
-                passwordErrorSpan.textContent = "";
-            }
-    
-            if (isValid) {
-                changeSection('trlogin');
-            }
-        }
-    </script>
-    
+       
 </section>
 <script src="./js/app.js"></script>
 </body>
@@ -100,17 +73,18 @@
             <h2 class="plus2">Connectez-vous à votre compte</h2>
             <div class="formulaire">
             <div class="greenred">
-                <p>CONNEXION</p>
+                <p></p>
             </div>
                 <label for="mail">Mail *</label>
-                <input type="email" placeholder="Votre addresse Mail" name="" id="">
+                <input type="email" placeholder="Votre addresse Mail" required name="" id="mail1">
                 <label for="password">Choisir votre mot de passe *</label>
-                <input type="password" placeholder="Votre mot de passe" name="" id="">
+                <input type="password" placeholder="Votre mot de passe" required name="" id="mdp2">
             </div>
             <div class="buttonform">
-                <button class="blue" onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
+                <button class="blue" aria-label="Connexion à votre compte" name="connexion a son compte"   onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
             </div>
         </form>
+        
     </section>
     <section class="trlogin">
         <h2 class="ted" id="wM" style=" text-align: center;">Bienvenue sur votre compte Ngampolo Aymerick</h2>
@@ -119,16 +93,101 @@
         <form class="loginaccount" action="" method="post">
             <h2 class="plus2">Connectez-vous à votre compte</h2>
             <div class="formulaire">
-                
+                <div class="greenred">
+                    <p></p>
+                </div>
                 <label for="mail">Mail *</label>
-                <input type="email" placeholder="Votre addresse Mail" name="" id="">
+                <input type="email" placeholder="Votre addresse Mail" required name="" id="mail">
                 <label for="password">Choisir votre mot de passe *</label>
-                <input type="password" placeholder="Votre mot de passe" name="" id="">
+                <input type="password" placeholder="Votre mot de passe" required name="" id="mdp">
             </div>
             <div class="buttonform">
-                <button class="blue" onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
+                <button class="blue" aria-label="Connexion à votre compte" name="connexion à son compte"    onclick="" style=" text-align: center;" type="button">CONNEXION A VOTRE COMPTE</button>
             </div>
         </form>
+    </section>
+    <section class="homepage">
+      <div>
+        <div class="ligne">
+           
+            <div class="log">
+                <img src="./asset/menu (2).png"  class="height2"alt="je t'aime" srcset="">
+                <img onclick="changeSection('acceuil')"  src="./asset/mail.png" height="30px" width="35px" alt="je t'aime" srcset="">
+                <h1 class="logog">Gmail</h1>
+            </div>
+            <input class="search" type="text" placeholder="Rechercher dans les messages" name="" id="">
+            <div class="end">
+              <img src="./asset/aide.png" class="height2" alt="je t'aime" srcset="">
+              <img src="./asset/zerere.png" class="height2" alt="je t'aime" srcset="">
+              <img src="./asset/menu (1).png" class="height2" alt="je t'aime" srcset="">
+              <img src="./asset/profil.png" class="height2" alt="je t'aime" srcset="">
+            </div>
+          
+            
+        </div>
+      <div class="flex">
+         <div>
+            <button aria-label="Nouveaubouton">Nouveau message</button>
+            <li class="choose">Boite de réception</li>
+            <li>Messages suivis</li>
+            <li>En attente</li>
+            <li>Messages envoyés</li>
+            <li>Brouillons</li>
+            <li>Plus</li>
+            <li>Spam</li>
+            <li>Corbeille</li>
+            <li>Planifiés</li>
+         </div>
+         <div>
+            <div class="mainhead">
+
+            </div>
+            <table class="blueTable">
+                <tbody>
+                <tr>
+                <td class="check"><input class="checkbox" type="checkbox" name="" id="favorite5"></td>
+                <td class="fav"><input class="favourite" type="radio" name="" id="favorite5"></td>
+                <td class="nombre">Nom</td>
+                <td class="object">Object</td>
+                <td class="lemail">Extrait du mail</td>
+                <td class="timeset">16:56</td>
+                </tr>
+                <tr>
+                <td class="check"><input class="checkbox" type="checkbox" name="" id="checkbox4"></td>
+                <td class="fav"><input class="favourite" type="radio" name="" id="favorite4"></td>
+                <td class="nombre">Nom</td>
+                <td class="object">Object</td>
+                <td class="lemail">Extrait du mail</td>
+                <td class="timeset">16:56</td>
+                </tr>
+                <tr>
+                <td class="check"><input class="checkbox" type="checkbox" name="" id="checkbox3"></td>
+                <td class="fav"><input class="favourite" type="radio" name="" id="favorite3"></td>
+                <td class="nombre">Nom</td>
+                <td class="object">Object</td>
+                <td class="lemail">Extrait du mail</td>
+                <td class="timeset">16:56</td>
+                </tr>
+                <tr>
+                <td class="check"><input class="checkbox" type="checkbox" name="" id="checkbox2"></td>
+                <td class="fav"><input class="favourite" type="radio" name="" id="favorite2"></td>
+                <td class="nombre">Nom</td>
+                <td class="object">Object</td>
+                <td class="lemail">Extrait du mail</td>
+                <td class="timeset">16:56</td>
+                </tr>
+                <tr>
+                <td class="check"><input class="checkbox" type="checkbox" name="" id="checkbox1"></td>
+                <td class="fav"><input class="favourite" type="radio" name="" id="favorite1"></td>
+                <td class="nombre">Nom</td>
+                <td class="object">Object</td>
+                <td class="lemail">Extrait du mail</td>
+                <td class="timeset">16:56</td>
+                </tr>
+                </tbody>
+                </table>
+         </div>
+      </div>
     </section>
 </body>
 </html>

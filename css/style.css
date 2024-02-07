@@ -15,6 +15,7 @@ body,section{
     width: auto;
     background-color: #fafafa;
     font-family: 'Open',sans-serif;
+    font-size: 1.6rem;
 }
 section{
     height: 100vh;
@@ -100,6 +101,15 @@ button:hover{
  align-items: center;
  margin-left: 1rem;
 }
+.log{
+    display: flex;
+   
+    margin-left: 1rem;
+   }
+
+.log img{
+    margin: 0 .5rem;
+}
 
 h1{
     font-size: 5rem;
@@ -149,6 +159,14 @@ h3{
     z-index: -1;
     top: 5rem;
     height: 93vh;
+}
+.homepage{
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    height: 100vh;
 }
 .createaccount{
     border: solid .3rem rgb(200, 200, 200);
@@ -215,7 +233,7 @@ input:focus {
     text-align: center;
     }
     .greenred{
-        background-color: #dd5347;
+       
         width: auto;
         height: 3rem;
         line-height: 3rem;
@@ -271,3 +289,140 @@ input:focus {
     height: 75rem;
 
    }
+.ligne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  height: 7em;
+}
+.search{
+    width: 50rem;
+   margin-right: 36.5rem;
+   margin-top: 1rem;
+   background-color: #EAF1FB;
+}
+.flex{
+ 
+}
+.flex div{
+    display: inline-block;
+}
+.flex div:first-child{
+    width: 30rem;
+    
+
+}
+.flex div:last-child{
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    width: 119rem;
+    vertical-align: top;
+    height: 65rem;
+}
+.end img{
+    margin: 0 .5rem;
+}
+.homepage{
+    background-color: #F6F8FC;
+}
+.homepage li{
+    list-style: none;
+    font-size: 1.5rem;
+    height: 4rem;
+    vertical-align: center;
+    border-radius: 0px 200px 200px 0px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    
+    padding-left: 5rem;
+}
+.choose{
+    background-color: #D3E3FD;
+    font-weight: 500;
+}
+
+.homepage button{
+    background-color: #C2E7FF;
+    color: #315068;
+    width: 22rem;
+    border-radius: 2rem;
+    margin: 2rem 2rem;
+}
+table.blueTable {
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+  }
+  table{
+    border: none;
+  }
+  
+element.style {
+}
+table.blueTable tr {
+    background: #F6F8FC;
+    border: none;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+table.blueTable{
+    background: #F6F8FC;
+    border-spacing: none;
+}
+
+.nombre{
+    text-align: left;
+}
+.object{
+    text-align: right;
+    width: 5%;
+}
+.lemail{
+    color: #535353;
+}
+  table.blueTable td, table.blueTable th {
+    padding: 3px 2px;
+  }
+  table.blueTable tbody td {
+    font-size: 13px;
+  }
+  table.blueTable tr{
+    background: #F6F8FC; border: none;
+  }
+  table.blueTable tfoot td {
+    font-size: 14px;
+  }
+  table.blueTable tfoot .links {
+   
+  }
+  table.blueTable tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    border: none;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  .check, .fav{
+    width: 1%;
+  }
+  .checkbox{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .favourite{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .mainhead{
+    height: 10rem;
+  }
+
+  .timeset{
+    width: 5rem;
+  }

@@ -1,9 +1,9 @@
 <div  class="logo">
-        <img onclick="changeSection('acceuil')"  src="./asset/mail.png" height="40px" width="45px" alt="" srcset="">
+        <img onclick="changeSection('acceuil')"  src="./asset/mail.png" class="height" alt="je t'aime" srcset="">
         <h1 class="logog">Gmail</h1>
     </div>
     <div>
-        <button type="button">POUR LES PROS</button>
-        <button type="button" onclick="changeSection('login')">CONNEXION</button>
-        <a href="#create"><button class="red" onclick="changeSection('create')">CREER UN COMPTE</button></a>
+        <button aria-label="pour les pros" type="button">POUR LES PROS</button>
+        <a name="link" accesskey="h" aria-label="Read more about Seminole tax hike" href="connexion.php"> <button aria-label="Connexion depuis la nav bar" type="button" >CONNEXION</button></a>
+        <a name="link" accesskey="h" aria-label="Read more about Seminole tax hike" href="index.php"><button name="creer un compte" aria-label="Creer un compte depuis la nav bar"  class="red" >CREER UN COMPTE</button></a>
     </div>

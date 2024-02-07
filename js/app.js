@@ -12,4 +12,34 @@ function changeSection(sectionName) {
     
     
 }
+function validerCompte() {
+    var inputs = document.querySelectorAll('.createaccount input[required]');
+    var isValid = true;
 
+    inputs.forEach(function(input) {
+        if (input.value.trim() === '') {
+            isValid = false;
+            input.classList.add('error');
+        } else {
+            input.classList.remove('error');
+        }
+    });
+
+    var passwordInput = document.getElementById('password');
+    var password = passwordInput.value.trim();
+
+    var passwordErrorSpan = document.getElementById('passwordError');
+    
+    if (password.length < 8 ) {
+        isValid = false;
+        passwordInput.classList.add('error');
+        passwordErrorSpan.textContent = "Utilisez 8 caractères ou plus pour votre mot de passe.";
+    } else {
+        passwordInput.classList.remove('error');
+        passwordErrorSpan.textContent = "";
+    }
+
+    if (isValid) {
+        changeSection('trlogin');
+    }
+}
