@@ -5,11 +5,11 @@
 Visiter le Projet [FakeGmail](https://lsdora.github.io/FakeGmail/static.html). 🚀
 
 ## Acceuil
-![Acceuil](./acceuil.png)
+![Acceuil](./firstpage.jpg)
 ## Creation de Compte
 ![work](./work.png)
 ## Connexion à un compte
-![competence](./competence.png)
+![competence](./secondepage.jpg)
 
 ## 🌟 Présentation
 
