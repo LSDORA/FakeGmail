@@ -169,13 +169,13 @@ h3{
     height: 100vh;
 }
 .createaccount{
-    border: solid .3rem rgb(200, 200, 200);
+    border: solid .1rem rgb(200, 200, 200);
     margin:0% 20% ;
     height: 45rem;
     margin-top: 3rem;
 }
 .loginaccount{
-    border: solid .3rem rgb(200, 200, 200);
+    border: solid .1rem rgb(200, 200, 200);
     margin:0% 20% ;
     height: 30rem;
     margin-top: 18rem;
@@ -199,7 +199,7 @@ input{
     width: 97%;
     background-color: white;
     margin-bottom: 1rem;
-    border-bottom: .7rem solid #D9D9D9;
+    border-bottom: .1rem solid #D9D9D9;
 }
 
 input:focus {
@@ -207,7 +207,7 @@ input:focus {
     outline: none;
     background-color: rgb(249, 255, 127); 
     box-sizing: border-box;
-    border-bottom: .7rem solid rgb(213, 218, 110);
+    border-bottom: .1rem solid rgb(213, 218, 110);
 }
 .plus{
     background-color: #fafafa;
