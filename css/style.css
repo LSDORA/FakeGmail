@@ -24,6 +24,13 @@ section{
     
 }
 
+.msg-alert{
+    background-color: rgb(210, 42, 42);
+    text-align: center;
+    margin: 0% 10%;
+    color: #fafafa;
+}
+
 nav{
     background-color: #fafafa;
     display: flex;
@@ -235,7 +242,7 @@ h3{
 .createaccount{
     border: solid .1rem rgb(200, 200, 200);
     margin:0% 20% ;
-    height: 45rem;
+    height: 47rem;
     margin-top: 3rem;
 }
 .loginaccount{
@@ -369,11 +376,15 @@ input:focus {
 .flex{
  
 }
+
+.flex ul{
+    
+}
 .flex div{
     display: inline-block;
 }
 .flex div:first-child{
-    width: 30rem;
+    width: 10rem;
     
 
 }
@@ -396,7 +407,7 @@ input:focus {
     height: 4rem;
     vertical-align: center;
     border-radius: 0px 200px 200px 0px;
-    width: 65%;
+    width: 15%;
     display: flex;
     align-items: center;
     

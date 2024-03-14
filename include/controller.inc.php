@@ -14,6 +14,18 @@
         static function Agent(){
           return $_user_agent = $_SERVER["HTTP_USER_AGENT"];
         }   
+        $prenom = valid_donnees($_POST["prenom"]);
+        $nom = valid_donnees($_POST["nom"]);
+        $mail = valid_donnees($_POST["mail"]);
+        $password = password_hash($_POST['password'],PASSWORD_DEFAULT);
+
+        function valid_donnees($donnees){
+          $donnees = trim($donnees);
+          $donnees = stripslashes($donnees);
+          $donnees = htmlspecialchars($donnees);
+          return $donnees;
+
+  }
     }
 
     $_user = new User();

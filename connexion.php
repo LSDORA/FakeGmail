@@ -1,7 +1,4 @@
-<?php
-session_start();
 
-?>
 <?php
 include_once "./include/head.inc.php";
 ?>
